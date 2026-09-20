@@ -710,13 +710,13 @@ const copy = {
     }
     function initFloatingDiyas() {
         const host = $("#diyas");
-        const tops = [15, 30, 52, 66, 80, 90];
+        const tops = [15, 26, 36, 47, 58, 69, 79, 90];
         tops.forEach((top, i) => {
             const d = document.createElementNS(SVG_NS, "svg");
             d.setAttribute("viewBox", "0 0 40 44");
             d.classList.add("diya");
             d.dataset.at = String(i / tops.length);
-            d.style[i % 2 ? "right" : "left"] = "1.2%";
+            d.style[i % 2 ? "right" : "left"] = "1%";
             d.style.top = top + "%";
             d.style.animationDuration = 4 + i * 0.7 + "s," + (2.5 + i * 0.4) + "s";
             d.style.animationDelay = i * 0.5 + "s";
