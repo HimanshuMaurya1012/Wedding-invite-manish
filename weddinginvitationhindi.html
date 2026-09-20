@@ -446,7 +446,7 @@ footer .fnames{font-size:clamp(1.6rem,8.4vw,3.2rem);line-height:1.4;margin:.6rem
   <div class="wrap rv">
     <h2 id="rh">हमारे उत्सव में पधारिए</h2>
     <p class="sub">आपकी उपस्थिति से<br>हमारा उत्सव पूर्ण होगा।</p>
-    <button class="btn wa" id="waBtn" aria-label="RSVP on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.200 13.800c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.200c.2-.3.5-.3.700-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.900.9c.3.1.5.2.5.3.1.2.1.7-.1 1.300z"/></svg>व्हाट्सऐप पर RSVP करें</button>
+  </button class="btn wa" id="waBtn" aria-label="RSVP on WhatsApp"></svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.200 13.800c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.200c.2-.3.5-.3.700-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.900.9c.3.1.5.2.5.3.1.2.1.7-.1 1.300z"/></svg></button>
   </div>
 </section>
 
@@ -472,7 +472,7 @@ footer .fnames{font-size:clamp(1.6rem,8.4vw,3.2rem);line-height:1.4;margin:.6rem
   <h2 class="names fnames"><span data-c="groomName"></span><span class="amp">&amp;</span><span data-c="brideName"></span></h2>
   <p class="date" style="font-size:.85rem">21 नवंबर 2026</p>
   <p class="date" style="font-size:.8rem;color:var(--bright-gold)"><span data-c="hashtag"></span></p>
-  <nav aria-label="Links"><a id="ig" target="_blank" rel="noopener">इंस्टाग्राम</a><a id="wa2" target="_blank" rel="noopener">व्हाट्सऐप</a><a id="mp2" target="_blank" rel="noopener">गूगल मैप्स</a></nav>
+  <nav aria-label="Links"><a id="ig" target="_blank" rel="noopener"></a><a id="wa2" target="_blank" rel="noopener">व्हाट्सऐप</a><a id="mp2" target="_blank" rel="noopener">गूगल मैप्स</a></nav>
   <p class="dev" style="color:var(--bright-gold);font-size:1.3rem">शुभमस्तु</p>
   <svg width="30" height="33" viewBox="0 0 40 44" style="margin-top:1rem;filter:drop-shadow(0 0 8px #E5B84B)" role="img" aria-label="Golden diya"><use href="#dy" xlink:href="#dy"/></svg>
 </footer>
@@ -491,7 +491,7 @@ footer .fnames{font-size:clamp(1.6rem,8.4vw,3.2rem);line-height:1.4;margin:.6rem
 const sharedConfig = {
     weddingDate: "November 21, 2026 16:00:00",
     hashtag: "#MANISHWEDSRISHU",
-    rsvpPhone: "917305210627",
+    rsvpPhone: "918824081770",
     mapsUrl: "https://maps.app.goo.gl/TcMdar1f8pvF7XF29",
     instagramUrl: "YOUR_INSTAGRAM_URL",
     musicUrl: "song.mp3",
@@ -716,7 +716,7 @@ const copy = {
     }
     function initLinks() {
         const wa = `https://wa.me/${weddingConfig.rsvpPhone}?text=${encodeURIComponent(weddingConfig.whatsappMessage)}`;
-        $("#waBtn").onclick = () => { location.href = wa; };
+        <!-- $("#waBtn").onclick = () => { location.href = wa; }; -->
         $("#wa2").href = wa;
         $("#ig").href = weddingConfig.instagramUrl;
         $("#mp2").href = weddingConfig.mapsUrl;
