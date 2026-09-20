@@ -716,7 +716,13 @@ const copy = {
             d.setAttribute("viewBox", "0 0 40 44");
             d.classList.add("diya");
             d.dataset.at = String(i / tops.length);
-            d.style[i % 2 ? "right" : "left"] = "1%";
+            if (i % 2 === 0) {
+                d.style.left = "1%";
+                d.style.right = "auto";
+            } else {
+                d.style.right = "1%";
+                d.style.left = "auto";
+            }
             d.style.top = top + "%";
             d.style.animationDuration = 4 + i * 0.7 + "s," + (2.5 + i * 0.4) + "s";
             d.style.animationDelay = i * 0.5 + "s";
